@@ -13,7 +13,6 @@ body {
   line-height: 1.5;
 }
 
-/* css-gallery */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -30,5 +29,5 @@ body {
 .gallery img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height
 }
