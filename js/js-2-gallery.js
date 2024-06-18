@@ -26,16 +26,16 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-
 const fragment = document.createDocumentFragment();
 
-images.forEach((image) => {
+images.map((image) => {
   const li = document.createElement("li");
   li.classList.add("gallery-item");
+
   const img = document.createElement("img");
-  img.src =
-    "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260";
-  img.alt = "Gallery Image";
+  img.src = image.url;
+  img.alt = image.alt;
+
   li.appendChild(img);
   fragment.appendChild(li);
 });
