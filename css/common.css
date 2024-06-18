@@ -14,20 +14,23 @@ body {
 }
 
 .gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
-
-.gallery li {
-  margin-right: 10px;
-  margin-bottom: 10px;
+.gallery-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.gallery img {
-  display: block;
+.gallery-item img {
   max-width: 100%;
-  height
+  max-height: 100%;
+  object-fit: cover;
 }

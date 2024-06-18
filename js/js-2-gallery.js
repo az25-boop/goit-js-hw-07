@@ -1,4 +1,3 @@
-// Зображення для галереї
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -26,22 +25,19 @@ const images = [
   },
 ];
 
-// Отримання посилання на галерею
 const gallery = document.querySelector(".gallery");
 
-// Створення фрагменту для оптимізації додавання елементів
 const fragment = document.createDocumentFragment();
 
-// Додавання зображень до галереї за одну операцію
 images.forEach((image) => {
   const li = document.createElement("li");
   li.classList.add("gallery-item");
   const img = document.createElement("img");
-  img.src = image;
+  img.src =
+    "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260";
   img.alt = "Gallery Image";
   li.appendChild(img);
   fragment.appendChild(li);
 });
 
-// Додавання фрагменту з елементами до галереї
 gallery.appendChild(fragment);
